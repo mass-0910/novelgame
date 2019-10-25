@@ -1,0 +1,40 @@
+// demo
+
+> これは、ノベルゲームエディタのデモです。
+> %gEscキー%wでメニューを表示します。
+
+>教室に移動
+
+backanim class
+
+> キャラクターを表示
+
+chset woman, center
+
+name 女性
+> 私が写ったでしょうか？
+name
+> 選択肢を表示
+name 女性
+branch あなたはJavaでHello Worldを出力できる？, 出力できるよ, Javaはよくしらない
+goto select1
+> Javaはとっても良い言語だよ。
+goto common
+
+@ select1
+> へぇ、君は賢いんだね。
+
+@ common
+name
+> キャラクターを移動させることもできます。
+chmove woman, left
+chmove woman, right
+chmove woman, left
+chmove woman, right
+chmove woman, center
+
+name 女性
+> じゃあ、私は行くね。
+chhide woman
+name
+> これでデモを終了します。
