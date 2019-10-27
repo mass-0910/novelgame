@@ -1,4 +1,4 @@
-# novelgame editor ver 1.1
+# novelgame editor ver. 1.1
 
 ## about
 
