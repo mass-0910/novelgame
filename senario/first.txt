@@ -1,0 +1,2 @@
+﻿// file first
+gotofile senario.txt

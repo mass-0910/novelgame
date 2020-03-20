@@ -1,0 +1,11 @@
+
+picdef black_fade.png, black
+picdef white_fade.png, white
+
+picdef classroom.jpg, class
+
+chdef sindou_chara.png, woman
+
+back white
+
+defend
