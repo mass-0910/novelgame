@@ -1,4 +1,3 @@
-
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Container;
@@ -218,7 +217,6 @@ public class View extends JFrame implements MouseListener, KeyListener{
 
 	@Override
 	public void keyTyped(KeyEvent e) {
-		// TODO 自動生成されたメソッド・スタブ
 
 	}
 
@@ -233,7 +231,6 @@ public class View extends JFrame implements MouseListener, KeyListener{
 
 	@Override
 	public void keyReleased(KeyEvent e) {
-		// TODO 自動生成されたメソッド・スタブ
 
 	}
 }
