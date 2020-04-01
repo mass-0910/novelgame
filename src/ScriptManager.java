@@ -124,9 +124,9 @@ public class ScriptManager {
 			bw.newLine();
 			bw.write(String.valueOf(readLineNum));
 			bw.newLine();
-			bw.write(nowBackPicName);
+			if(nowBackPicName != null)bw.write(nowBackPicName);
 			bw.newLine();
-			bw.write(nowPlayingBGMName);
+			if(nowPlayingBGMName != null)bw.write(nowPlayingBGMName);
 			bw.newLine();
 			for (int i = 0; characters[i] != null; i++)
 				line += characters[i].getName() + ",";
@@ -164,8 +164,12 @@ public class ScriptManager {
 		nowBackPicName = sr.getLine(3);
 		nowPlayingBGMName = sr.getLine(4);
 		thisv.setImage(picTable.getPicimage(nowBackPicName), Const.LAYER_BACK);
-		bgm = waveTable.getWave(nowPlayingBGMName);
-		bgm.play(true);
+		try{
+			bgm = waveTable.getWave(nowPlayingBGMName);
+			bgm.play(true);
+		}catch(NullPointerException e){
+			bgm = null;
+		}
 		String[] characterNameSplit = sr.getLine(5).split(",");
 		String[] characterPositionSplit = sr.getLine(6).split(",");
 		String[] characterDifSplit = sr.getLine(7).split(",");
@@ -708,7 +712,6 @@ class ScriptExection {
 				try {
 					Thread.sleep(10);
 				} catch (InterruptedException e) {
-					// TODO 自動生成された catch ブロック
 					e.printStackTrace();
 				}
 			}
@@ -776,7 +779,6 @@ class ScriptExection {
 			try {
 				Thread.sleep(10);
 			} catch (InterruptedException e) {
-				// TODO 自動生成された catch ブロック
 				e.printStackTrace();
 			}
 		}
@@ -825,7 +827,6 @@ class ScriptExection {
 			try {
 				Thread.sleep(10);
 			} catch (InterruptedException e) {
-				// TODO 自動生成された catch ブロック
 				e.printStackTrace();
 			}
 		}
@@ -854,7 +855,6 @@ class ScriptExection {
 			try {
 				Thread.sleep(10);
 			} catch (InterruptedException e) {
-				// TODO 自動生成された catch ブロック
 				e.printStackTrace();
 			}
 		}
@@ -883,7 +883,6 @@ class ScriptExection {
 			try {
 				Thread.sleep(10);
 			} catch (InterruptedException e) {
-				// TODO 自動生成された catch ブロック
 				e.printStackTrace();
 			}
 		}
@@ -1017,7 +1016,6 @@ class Character {
 			try {
 				Thread.sleep(10);
 			} catch (InterruptedException e) {
-				// TODO 自動生成された catch ブロック
 				e.printStackTrace();
 			}
 		}
