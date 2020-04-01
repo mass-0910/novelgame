@@ -1,2 +1,2 @@
 ﻿// file first
-gotofile senario.txt
+gotofile phase1.txt

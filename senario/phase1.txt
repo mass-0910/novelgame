@@ -1,0 +1,26 @@
+この行は読み飛ばす...(システムバグだが、なんせJavaコードを書いたのが1年前なので直せない。)
+
+backfade black
+seplay thunder
+back white
+backfade black
+> やっべえ雷鳴だなぁ...
+@ bbb
+branch 早く帰らなきゃ（使命感）, 帰る, 帰らない
+goto kitaku
+goto nokoru
+
+@ kitaku
+> はやく帰って宿題しなきゃ...
+goto common
+
+@ nokoru
+seplay thunder
+back white
+backfade black
+> やべえよやべえよ...
+> 帰れなくなっちゃう...やばいやばい...
+goto bbb
+
+@ common
+> 帰った。
