@@ -1,1 +1,11 @@
-nope
+2020”N04ŒŽ01“ú14Žž23•ª
+phase1.txt
+5
+black
+
+woman,
+center,
+default,
+false,
+
+

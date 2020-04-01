@@ -1,11 +1,12 @@
-
-picdef black_fade.png, black
-picdef white_fade.png, white
+// define
+picdef system/black_fade.png, black
+picdef system/white_fade.png, white
 
 picdef classroom.jpg, class
+picdef school.jpg, sch
 
 chdef sindou_chara.png, woman
 
-back white
+musicdef thunder3.wav, thunder
 
 defend
